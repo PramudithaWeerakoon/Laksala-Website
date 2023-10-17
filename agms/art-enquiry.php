@@ -27,7 +27,7 @@ echo "<script>window.location.href='index.php'</script>";
 <!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Art Gallery Management System | Art Enquiry</title>
+      <title>Laksala</title>
       
       <script>
          addEventListener("load", function () {

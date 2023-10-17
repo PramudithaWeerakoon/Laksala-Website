@@ -969,7 +969,7 @@ color: #000;
 	margin:2em 0 0;
     color: #545454;
     font-size: 0.9em;
-    line-height:2sem;
+    line-height:2em;
 }
 .bootstrap-tab-text-grid:nth-child(2){
 	margin:3em 0 0;
@@ -1154,7 +1154,7 @@ button.toys-cart {
 		width: 343px;
 	}
 	.add-review input[type="submit"] {
-    padding: 12px 0
+    padding: 12px;
 	 font-size: .9em;
 	}
    

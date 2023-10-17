@@ -6,7 +6,7 @@ include('includes/dbconnection.php');
 <!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Art Gallery Management System | Home Page</title>
+      <title>Laksala | Home Page</title>
        <script>
          addEventListener("load", function () {
          	setTimeout(hideURLbar, 0);

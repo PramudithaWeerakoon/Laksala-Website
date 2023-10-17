@@ -502,8 +502,8 @@ font-size: 14px;
 }
 /*-- //inner-banner --*/ 
 /*--blog--*/
-.blog,.premium,.sub-below-address{
-    background:#26bb48;
+.blog, .premium, .sub-below-address {
+    background: #ecc61c url(underpanel.jpg) center/cover; /* Background color and image */
 }
 /*--//blog--*/
 /*-- about-- */

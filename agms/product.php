@@ -7,7 +7,7 @@ include('includes/dbconnection.php');
 <!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Art Gallery Management System | Product Page</title>
+      <title>Laksala</title>
       
       <script>
          addEventListener("load", function () {
