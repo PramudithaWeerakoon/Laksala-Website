@@ -6,9 +6,8 @@ include('includes/dbconnection.php');
 <!DOCTYPE html>
 <html lang="zxx">
    <head>
-      <title>Art Gallery Management System | Home Page</title>
-      
-      <script>
+      <title>Laksala | Home Page</title>
+       <script>
          addEventListener("load", function () {
          	setTimeout(hideURLbar, 0);
          }, false);
@@ -17,7 +16,8 @@ include('includes/dbconnection.php');
          	window.scrollTo(0, 1);
          }
       </script>
-      <!--//meta tags ends here-->
+       <link rel="icon" type="image/x-icon" href="images/Laksala-logo.jpg">
+       <!--//meta tags ends here-->
       <!--booststrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
       <!--//booststrap end-->
@@ -48,7 +48,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info ">
                               <h5>Pick The Best Art For <br>Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                  <p style="color: black;"><b>Selecting the finest art is about finding what speaks to you. It's the art that resonates, evokes emotions, and enhances your space.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -63,7 +63,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info ">
                               <h5>Sort Art And Painting<br>For Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                  <p style="color: black;"><b>Art and painting sorting is the methodical organization of artworks using different criteria, allowing us to categorize, appreciate,<br> and navigate the rich tapestry of artistic expression.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -78,7 +78,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info">
                               <h5>Best Art And Painting<br> For Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                  <p style="color: black;"><b>Experience the finest in art and painting - a world where creativity knows no bounds, where colors and emotions converge to create captivating masterpieces.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
