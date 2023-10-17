@@ -26,7 +26,7 @@ while ($row=mysqli_fetch_array($ret)) {
             <div class="container-fluid">
                <div class="hedder-up row">
                   <div class="col-lg-3 col-md-3 logo-head">
-                     <h1><a class="navbar-brand" href="index.php">Online Art Gallery</a></h1>
+                     <h1><a class="navbar-brand" href="index.php"><b>Laksala</b></a></h1>
                   </div>
                </div>
             </div>

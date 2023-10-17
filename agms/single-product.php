@@ -17,6 +17,7 @@ include('includes/dbconnection.php');
          	window.scrollTo(0, 1);
          }
       </script>
+       <link rel="icon" type="image/x-icon" href="images/Laksala-logo.jpg">
       <!--//meta tags ends here-->
       <!--booststrap-->
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
