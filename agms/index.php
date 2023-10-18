@@ -253,7 +253,7 @@ while ($row=mysqli_fetch_array($ret)) {
          		animationSpeed: 3000,
          		autoPlay:true,
          		autoPlaySpeed: 2000,    		
-         		pauseOnHover: true,
+         		pauseOnHover: false,
          		enableResponsiveBreakpoints: true,
          		responsiveBreakpoints: { 
          			portrait: { 

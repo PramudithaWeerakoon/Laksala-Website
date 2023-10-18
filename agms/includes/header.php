@@ -23,13 +23,16 @@ while ($row=mysqli_fetch_array($ret)) {
                   </ul><?php } ?>
                </div>
             </div>
-            <div class="container-fluid">
-               <div class="hedder-up row">
-                  <div class="col-lg-3 col-md-3 logo-head">
-                     <h1><a class="navbar-brand" href="index.php"><b>Laksala</b></a></h1>
-                  </div>
-               </div>
-            </div>
+             <div class="container-fluid">
+                 <div class="hedder-up row">
+                     <div class="col-lg-3 col-md-3 logo-head">
+                         <h1><a class="navbar-brand" href="index.php"><b>Laksala</b></a></h1>
+                     </div>
+                     <div class="col-lg-9 col-md-9 text-right"> <!-- Add this div for the image -->
+                         <img src="images/handicrafts_board_logo.jpg" alt="Header Image" width="200" height="90" />
+                     </div>
+                 </div>
+             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
