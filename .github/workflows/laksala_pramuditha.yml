@@ -60,4 +60,4 @@ jobs:
           app-name: 'pramuditha'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D0F3D1BE3A1141458348B09940325B1D }}
-          package: . 1 file to run is index.php
+          package: 'ZipDeploy. Extract zip'
