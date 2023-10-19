@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -35,7 +36,7 @@ jobs:
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: php-app
           path: release.zip
@@ -49,7 +50,7 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
           name: php-app
 
@@ -58,9 +59,8 @@ jobs:
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
-        id: deploy-to-webapp
         with:
           app-name: 'nibmcourse'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6CBC55A96137414C9A55ADCEA9C8F095 }}
-          package: .
+          package: .  # Modify this to specify the path to your PHP app files
