@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-include('includes/dbconnection.php');
+include('hi/dbconnection.php');
 
 if(isset($_POST['send']))
   {
@@ -56,7 +56,7 @@ echo "<script>window.location.href='index.php'</script>";
       <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
    </head>
    <body>
-      <?php include_once('includes/header.php');?>
+      <?php include_once('hi/header.php');?>
       <!-- banner -->
       <div class="inner_page-banner one-img">
       </div>
@@ -102,7 +102,7 @@ echo "<script>window.location.href='index.php'</script>";
       </section>
       <!--subscribe-address-->
     
- <?php include_once('includes/footer.php');?>
+ <?php include_once('hi/footer.php');?>
       
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>

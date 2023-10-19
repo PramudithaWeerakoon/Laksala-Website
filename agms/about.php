@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 
-include('includes/dbconnection.php');
+include('hi/dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -37,7 +37,7 @@ include('includes/dbconnection.php');
    </head>
 <body>
       <!--headder-->
-    <?php include_once('includes/header.php');?>
+    <?php include_once('hi/header.php');?>
       <!-- banner -->
       <div class="inner_page-banner one-img">
       </div>
@@ -67,35 +67,32 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
             <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"><?php  echo $row['PageTitle'];?></h3>
             <div class="about-innergrid-agile text-center">
-               <h4>Welcome To Our Gallery</h4>
+               <h4>Welcome Laksala</h4>
                <p class="mb-3"> <?php  echo $row['PageDescription'];?>
                </p><br><?php } ?>
                <div class=" img-toy-w3l-top">
                </div>
             </div>
             <div class="about-sub-inner text-center mt-lg-4 mt-3">
-               <h4>Art Gallery
+               <h4>Laksala
                </h4>
                <div class="row">
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-truck"></span>
                      <h5>Shipping</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3"> We provide efficient shipping services to get your orders to you quickly. You can choose from a range of shipping options during checkout to suit your preferences
                      </p>
                   </div>
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-phone-volume"></span>  
                      <h5>Support</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3"> Your satisfaction is our top priority, and our dedicated support team is available 24/7 to assist you with any questions or concerns you may have. Feel free to reach out to us anytime; we're here to help
                      </p>
                   </div>
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-undo"></span>
                      <h5> Return</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3">We understand that sometimes products may not meet your expectations. Our hassle-free return policy allows you to return items within 30 days of purchase for a full refund or exchange
                      </p>
                   </div>
                </div>
@@ -104,7 +101,7 @@ while ($row=mysqli_fetch_array($ret)) {
       </section>
       <!--//about -->
 
-   <?php include_once('includes/footer.php');?>
+   <?php include_once('hi/footer.php');?>
       <!-- //Modal 1-->
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>

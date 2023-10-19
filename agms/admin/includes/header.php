@@ -1,7 +1,7 @@
    <?php
 session_start();
 error_reporting(0);
-include('includes/dbconnection.php');
+include('hi/dbconnection.php');
 ?>
    <header class="header dark-bg">
       <div class="toggle-nav">
@@ -15,7 +15,7 @@ $name=$row['AdminName'];
 
 ?>
       <!--logo start-->
-      <a href="dashboard.php" class="logo"><span class="lite"><strong> ART GALLERY | Admin</strong></span></a>
+      <a href="dashboard.php" class="logo"><span class="lite"><strong> Laksala | Admin</strong></span></a>
       <!--logo end-->
 
       

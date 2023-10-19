@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 
-include('includes/dbconnection.php');
+include('hi/dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -40,7 +40,7 @@ include('includes/dbconnection.php');
    </head>
    <body>
       <!--headder-->
-      <?php include_once('includes/header.php');?>
+      <?php include_once('hi/header.php');?>
       <!-- banner -->
       <div class="inner_page-banner one-img">
       </div>
@@ -149,7 +149,7 @@ while ($row=mysqli_fetch_array($ret)) {
          </div>
       </section>
       <!-- //show Now-->
-     <?php include_once('includes/footer.php');?>
+     <?php include_once('hi/footer.php');?>
     
     
       <!--js working-->

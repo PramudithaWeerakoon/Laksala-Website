@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include('includes/dbconnection.php');
+include('hi/dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -38,7 +38,7 @@ include('includes/dbconnection.php');
       <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
    </head>
    <body>
-      <?php include_once('includes/header.php');?>
+      <?php include_once('hi/header.php');?>
       <div class="slider text-center">
             <div class="callbacks_container">
                <ul class="rslides" id="slider4">
@@ -46,9 +46,9 @@ include('includes/dbconnection.php');
                      <div class="slider-img one-img">
                         <div class="container">
                            <div class="slider-info ">
-                              <h5>Pick The Best Art For <br>Your Choice</h5>
+                              <h5>Exploring the Treasures of Laksala: Sri Lanka's Premier Handicraft Store <br>Your Choice</h5>
                               <div class="bottom-info">
-                                  <p style="color: black;"><b>Selecting the finest art is about finding what speaks to you. It's the art that resonates, evokes emotions, and enhances your space.</b></p>
+                                  <p style="color: black;"><b>Exploring the Treasures of Laksala: Sri Lanka's Premier Handicraft Store" is an invitation to uncover the cultural richness and artistry of Sri Lanka through Laksala, where traditional craftsmanship and local talents converge to offer a diverse array of unique handicrafts and souvenirs.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -61,9 +61,9 @@ include('includes/dbconnection.php');
                      <div class="slider-img two-img">
                         <div class="container">
                            <div class="slider-info ">
-                              <h5>Sort Art And Painting<br>For Your Choice</h5>
+                              <h5>A Showcase of Sri Lankan Culture and Craftsmanship<br>For Your Choice</h5>
                               <div class="bottom-info">
-                                  <p style="color: black;"><b>Art and painting sorting is the methodical organization of artworks using different criteria, allowing us to categorize, appreciate,<br> and navigate the rich tapestry of artistic expression.</b></p>
+                                  <p style="color: black;"><b>A Showcase of Sri Lankan Culture and Craftsmanship" is a tribute to the profound cultural heritage of Sri Lanka, exemplified by the remarkable handcrafted treasures available at Laksala. This title encapsulates the essence of the store as a platform for preserving and promoting the nation's artistic traditions.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -76,9 +76,9 @@ include('includes/dbconnection.php');
                      <div class="slider-img three-img">
                         <div class="container">
                            <div class="slider-info">
-                              <h5>Best Art And Painting<br> For Your Choice</h5>
+                              <h5>Discover Sri Lanka's Precious Treasures<br> For Your Choice</h5>
                               <div class="bottom-info">
-                                  <p style="color: black;"><b>Experience the finest in art and painting - a world where creativity knows no bounds, where colors and emotions converge to create captivating masterpieces.</b></p>
+                                  <p style="color: black;"><b>Discover Sri Lanka's Precious Treasures" offers a captivating journey into the world of Ceylon sapphires, exquisite gemstones, and finely crafted jewelry, showcasing the country's esteemed legacy in the realm of precious treasures. Unearth the beauty and significance of these gems, deeply rooted in Sri Lanka's culture and history.</b></p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -147,33 +147,46 @@ include('includes/dbconnection.php');
       <!-- //about -->
       <!--new Arrivals -->
       <section class="blog py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">New Arrivals</h3>
-            <div class="slid-img">
-               <ul id="flexiselDemo1">
-                  <?php
-$ret=mysqli_query($con,"select tblarttype.ID as atid,tblarttype.ArtType as typename,tblartproduct.ID as apid,tblartproduct.Title,tblartproduct.Image,tblartproduct.ArtType from tblartproduct join tblarttype on tblarttype.ID=tblartproduct.ArtType");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
+          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+              <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">New Arrivals</h3>
+              <div class="slid-img">
+                  <ul id="flexiselDemo1">
+                      <?php
+                      $ret = mysqli_query($con, "SELECT
+                    tblarttype.ID AS atid,
+                    tblarttype.ArtType AS typename,
+                    tblartproduct.ID AS apid,
+                    tblartproduct.Title,
+                    tblartproduct.Image,
+                    tblartproduct.ArtType
+                FROM
+                    tblartproduct
+                JOIN
+                    tblarttype ON tblarttype.ID = tblartproduct.ArtType
+                ORDER BY
+                    tblartproduct.ID DESC
+                LIMIT 8");
 
-?>
-                  <li>
-                   
-                     <div class="agileinfo_port_grid">
-                        <img src="admin/images/<?php echo $row['Image'];?>" width="300" height="300" alt=" " class="img-fluid" />
-                        <div class="banner-right-icon">
-                           <h4 class="pt-3"><?php echo $row['typename'];?></h4>
-                        </div>
-                        <div class="outs_more-buttn">
-                           <a href="art-enquiry.php?eid=<?php echo $row['apid'];?>">Enquiry</a>
-                        </div>
-                     </div>
-                  </li><?php }?>
-                
-               </ul>
-            </div>
-         </div>
+                      $cnt = 1;
+                      while ($row = mysqli_fetch_array($ret)) {
+                          ?>
+                          <li>
+                              <div class="agileinfo_port_grid">
+                                  <img src="admin/images/<?php echo $row['Image'];?>" width="300" height="300" alt=" " class="img-fluid" style="margin-right: 20px;">
+                                  <div class="banner-right-icon">
+                                      <h4 class="pt-3"><?php echo $row['typename'];?></h4>
+                                  </div>
+                                  <div class="outs_more-buttn">
+                                      <a href="art-enquiry.php?eid=<?php echo $row['apid'];?>">Enquiry</a>
+                                  </div>
+                              </div>
+                          </li>
+                      <?php } ?>
+                  </ul>
+              </div>
+          </div>
       </section>
+
       <!--//about -->
      
    
@@ -198,7 +211,7 @@ while ($row=mysqli_fetch_array($ret)) {
       <!--//Product-about-->
      
       <!-- footer -->
-      <?php include_once('includes/footer.php');?>
+      <?php include_once('hi/footer.php');?>
       <!-- //footer -->
       <!-- Modal 1-->
     

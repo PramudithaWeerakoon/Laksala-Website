@@ -2020,7 +2020,7 @@
       /**
        * ### .include(haystack, needle, [message])
        *
-       * Asserts that `haystack` includes `needle`. Works
+       * Asserts that `haystack` hi `needle`. Works
        * for strings and arrays.
        *
        *     assert.include('foobar', 'bar', 'foobar contains string "bar"');
