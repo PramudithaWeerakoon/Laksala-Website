@@ -35,13 +35,20 @@ if(isset($_POST['login']))
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet" />
+    <style>
+        h1{
+            align-content: center;
+            color: black;
+            width: 50%;
+        }
+    </style>
 
 </head>
 
 <body class="login-img3-body">
 
   <div class="container">
-
+      <h1><b>Laksala ADMINISTRATOR</b></h1>
     <form class="login-form" action="" method="post">
       
       <div class="login-wrap">
@@ -55,8 +62,8 @@ if(isset($_POST['login']))
           <input type="password" class="form-control" name="password" placeholder="Password" required="true">
         </div>
         
-                
-                <lable><span class="pull-right"> <a href="forgot-password.php"> Forgot Password?</a></span>
+
+                <label><span class="pull-right"> <a href="forgot-password.php"> Forgot Password?</a></span>
             </label>
         <button class="btn btn-primary btn-lg btn-block" type="submit" name="login">Login</button>
             <p style="margin-top:3%; font-weight:bold"><a href="../index.php" >Back to Home page</a></p>
