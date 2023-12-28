@@ -1,4 +1,3 @@
-
 # Laksala Sri Lanka Website
 
 ## Overview
@@ -13,14 +12,29 @@ Welcome to the Laksala Sri Lanka website repository! This project is a fully fun
 
 - **Modern Web Functions:** Leveraging the latest web technologies, this website includes all the functionalities expected in a modern and user-friendly web platform.
 
+## Technologies Used
 
+- **JavaScript:** 53.0%
+- **CSS:** 16.3%
+- **HTML:** 13.2%
+- **PHP:** 12.6%
+- **CoffeeScript:** 4.4%
+- **Less:** 0.3%
+- **Other:** 0.2%
+
+## Live Demo
+
+Explore the live version of the Laksala Sri Lanka website hosted on [000webhost](https://cwlaksala.000webhostapp.com/).
+
+## Getting Started
 
 To get started with the project, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/PramudithaKeshara/Laksala-Website.git
-   ```
+
+
 
 2. **Navigate to the Project Directory:**
    ```bash
