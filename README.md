@@ -26,6 +26,9 @@ Welcome to the Laksala Sri Lanka website repository! This project is a fully fun
 
 Explore the live version of the Laksala Sri Lanka website hosted on [000webhost](https://cwlaksala.000webhostapp.com/).
 
+Admin user name -Admin
+Password -123
+
 ## Getting Started
 
 To get started with the project, follow these steps:
