@@ -79,7 +79,7 @@ furnished to do so, subject to the following conditions:
 
 For inquiries or feedback, please contact the project maintainer:
 
-- [Pramuditha Keshara](mailto:pramudithapaypal@gmail.com)
+- [Pramuditha Weerakoon ](mailto:pramudithapaypal@gmail.com)
 
 Thank you for your interest and contribution to the Laksala Sri Lanka website!
 
